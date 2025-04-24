@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar/Navbar";
+import "./App.css";
+import Footer from "./components/Footer/Footer";
+import About from "./components/About/About";
+import Project from "./components/Projects/Project";
+import Contact from "./components/Contact/Contact";
 
 function App() {
+  const scrollTo = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar scrollTo={scrollTo} />
+      <div className="App">
+        <div className="hero">
+          <div className="heroPhoto">
+            <img src="./mainPhoto.jpg" alt="" />
+          </div>
+
+          <div className="heroText">
+            <h2>I'm </h2>
+            <h1>Sakis Staikos</h1>
+            <h3>a Guitar/Music tutor </h3>
+            <h3>and Frontend developer</h3>
+            <button onClick={() => scrollTo("contact")}>Contact Me</button>
+          </div>
+        </div>
+      </div>
+      <About scrollTo={scrollTo} />
+      <Project scrollTo={scrollTo} />
+      <Contact scrollTo={scrollTo} />
+
+      <Footer />
     </div>
   );
 }

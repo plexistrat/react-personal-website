@@ -1,38 +1,67 @@
 .App {
+  margin: 0px;
+  padding: 0px;
+  /* border: 1px solid red; */
+}
+.hero {
+  display: flex;
+}
+.heroPhoto {
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 140px;
+}
+.heroPhoto img {
+  width: 350px;
+  height: 450px;
+  border-radius: 50%;
+}
+.heroText {
+  margin-left: autoß;
+  width: 400px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 140px;
+  padding-top: 40px;
+}
+
+.heroText h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.heroText h1:hover {
+  color: lightskyblue;
+  transition: 0.7s;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.heroText h2 {
+  font-size: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heroText h3 {
+  font-size: 20px;
+  text-align: center;
+}
+.heroText button {
+  background-color: lightskyblue;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heroText button:hover {
+  background-color: lightpink;
+  transition: 0.7s;
+  transform: scale(1.01);
+  cursor: pointer;
 }

@@ -1,0 +1,106 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e3b50;
+  padding: 10px;
+}
+.about h1 {
+  width: 600px;
+  margin: 10px;
+  font-size: 26px;
+  color: lightsteelblue;
+  margin-top: 100px;
+}
+.intro {
+  width: 600px;
+  margin: 10px;
+  font-size: 18px;
+  color: lightsteelblue;
+}
+.bio {
+  width: 600px;
+  margin: 20px;
+  font-size: 18px;
+  color: lightsteelblue;
+}
+.interests {
+  width: 600px;
+  margin: 10px;
+  font-size: 18px;
+  color: lightsteelblue;
+}
+.closing {
+  width: 600px;
+  margin: 20px;
+  font-size: 18px;
+  color: lightsteelblue;
+}
+.skills {
+  width: 600px;
+  margin: 10px;
+  font-size: 18px;
+  color: lightsteelblue;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e3b50;
+  color: #fff;
+  gap: 20px;
+}
+.card {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #2e3b50;
+
+  @media screen and (max-width: 1350px) {
+    width: 200px;
+    height: 200px;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 150px;
+    height: 150px;
+  }
+  @media screen and (max-width: 800px) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.card:hover {
+  color: lightseagreen;
+  transition: 0.7s;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.card a {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+}
+.card img:hover {
+  transition: 0.7s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
