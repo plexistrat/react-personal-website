@@ -11,6 +11,13 @@ function App() {
     element.scrollIntoView({ behavior: "smooth" });
   };
 
+  function downloadCv() {
+    const link = document.createElement("a");
+    link.href = "./CV.pdf";
+    link.download = "CV.pdf";
+    link.click();
+  }
+
   return (
     <div>
       <Navbar scrollTo={scrollTo} />
@@ -25,7 +32,7 @@ function App() {
             <h1>Sakis Staikos</h1>
             <h3>a Guitar/Music tutor </h3>
             <h3>and Frontend developer</h3>
-            <button onClick={() => scrollTo("contact")}>Contact Me</button>
+            <button onClick={downloadCv}>Download CV</button>
           </div>
         </div>
       </div>
