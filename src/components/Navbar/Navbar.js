@@ -5,7 +5,7 @@ const Navbar = ({ scrollTo }) => {
   return (
     <div className="navbar">
       <a href="/">
-        <img style={{ width: "60px" }} src="./sakislogo.jpeg" alt="" />
+        <img src="./logo.png" alt="" />
       </a>
 
       <div className="buttons">

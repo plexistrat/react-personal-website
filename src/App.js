@@ -2,8 +2,9 @@ import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
-import Project from "./components/Projects/Project";
+// import Project from "./components/Projects/Project";
 import Contact from "./components/Contact/Contact";
+import NewProjects from "./components/NewProjects/NewProjects";
 
 function App() {
   const scrollTo = (id) => {
@@ -37,9 +38,9 @@ function App() {
         </div>
       </div>
       <About scrollTo={scrollTo} />
-      <Project scrollTo={scrollTo} />
+      {/* <Project scrollTo={scrollTo} /> */}
+      <NewProjects scrollTo={scrollTo} />
       <Contact scrollTo={scrollTo} />
-
       <Footer />
     </div>
   );
