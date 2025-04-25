@@ -1,56 +1,68 @@
 .about {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #2e3b50;
   padding: 10px;
 }
-.about h1 {
-  width: 600px;
-  margin: 10px;
-  font-size: 26px;
+.aboutcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e3b50;
+  color: #fff;
+  padding: 10px;
+}
+.aboutcontent h1 {
+  font-size: 40px;
   color: lightsteelblue;
-  margin-top: 100px;
 }
 .intro {
   width: 600px;
   margin: 10px;
-  font-size: 18px;
+  font-size: 20px;
   color: lightsteelblue;
 }
 .bio {
   width: 600px;
   margin: 20px;
-  font-size: 18px;
+  font-size: 20px;
   color: lightsteelblue;
 }
 .interests {
   width: 600px;
   margin: 10px;
-  font-size: 18px;
+  font-size: 20px;
   color: lightsteelblue;
 }
 .closing {
   width: 600px;
   margin: 20px;
-  font-size: 18px;
+  font-size: 22px;
   color: lightsteelblue;
 }
-.skills {
-  width: 600px;
-  margin: 10px;
-  font-size: 18px;
-  color: lightsteelblue;
-}
-.cards {
+.skillscontainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #2e3b50;
   color: #fff;
-  gap: 20px;
+  padding: 10px;
+  margin-top: 100px;
+}
+.skills {
+  font-size: 28px;
+  color: lightsteelblue;
+}
+.cards {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: #2e3b50;
+  color: #fff;
 }
 .card {
   width: 250px;
@@ -61,31 +73,10 @@
   align-items: center;
   color: #fff;
   background-color: #2e3b50;
-
-  @media screen and (max-width: 1350px) {
-    width: 200px;
-    height: 200px;
-  }
-  @media screen and (max-width: 1000px) {
-    width: 150px;
-    height: 150px;
-  }
-  @media screen and (max-width: 800px) {
-    width: 100px;
-    height: 100px;
-  }
 }
-
-.card:hover {
-  color: lightseagreen;
-  transition: 0.7s;
-  transform: scale(1.01);
-  cursor: pointer;
-}
-
 .card a {
-  width: 250px;
-  height: 250px;
+  /* width: 150px; */
+  /* height: 250px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,11 +87,11 @@
 }
 
 .card img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 }
 .card img:hover {
-  transition: 0.7s;
-  transform: scale(1.05);
+  transition: 0.5s;
+  transform: scale(1.1);
   cursor: pointer;
 }

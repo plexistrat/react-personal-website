@@ -32,41 +32,46 @@ const cards = [
 const About = ({ scrollTo }) => {
   return (
     <div className="about" id="About">
-      <h1> About</h1>
-      <p className="intro">
-        Hey, I’m Sakis Staikos — a musician turned aspiring front-end developer.
-      </p>
-      <p className="bio">
-        For over 15 years, I’ve worked professionally as a guitarist and music
-        theory tutor, performing on stage and helping students of all levels
-        find their voice through music. One of the things I’m most proud of is
-        seeing students who started with zero experience go on to become
-        professional musicians themselves. That kind of growth and
-        transformation really motivates me.
-      </p>
-      <p className="interests">
-        Recently, I’ve found a new creative spark in front-end development. I
-        love how coding blends logic with artistry — much like music. The
-        process of building something from scratch, solving problems, and making
-        things look and feel great just clicks with me. Right now, I’m focused
-        on a HTML5, CSS, React.js, and Next.js, and I’m excited to keep learning
-        and building.
-      </p>
-      <p className="closing">
-        This site is part of that journey — thanks for stopping by.
-      </p>
-      <div className="skills">
-        <h2>My Skills</h2>
+      <div className="aboutcontent">
+        <h1> About</h1>
+        <p className="intro">
+          Hey, I’m Sakis Staikos — a musician turned aspiring front-end
+          developer.
+        </p>
+        <p className="bio">
+          For over 15 years, I’ve worked professionally as a guitarist and music
+          theory tutor, performing on stage and helping students of all levels
+          find their voice through music. One of the things I’m most proud of is
+          seeing students who started with zero experience go on to become
+          professional musicians themselves. That kind of growth and
+          transformation really motivates me.
+        </p>
+        <p className="interests">
+          Recently, I’ve found a new creative spark in front-end development. I
+          love how coding blends logic with artistry — much like music. The
+          process of building something from scratch, solving problems, and
+          making things look and feel great just clicks with me. Right now, I’m
+          focused on a HTML5, CSS, React.js, and Next.js, and I’m excited to
+          keep learning and building.
+        </p>
+        <p className="closing">
+          This site is part of that journey — thanks for stopping by.
+        </p>
       </div>
-      <div className="cards">
-        {cards.map((card) => (
-          <div className="card" key={card.title}>
-            <a href={card.link}>
-              <img src={card.image} alt={card.title} />
-              {card.title}
-            </a>
-          </div>
-        ))}
+      <div className="skillscontainer">
+        <div className="skills">
+          <h2>My Skills</h2>
+        </div>
+        <div className="cards">
+          {cards.map((card) => (
+            <div className="card" key={card.title}>
+              <a href={card.link}>
+                <img src={card.image} alt={card.title} />
+                {card.title}
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
