@@ -28,6 +28,10 @@
   gap: 10px;
   display: flex;
   padding: 10px;
+
+  @media screen and (max-width: 425px) {
+    display: none;
+  }
 }
 .buttons button {
   color: lightsteelblue;
@@ -38,7 +42,6 @@
   font-size: 16px;
 }
 .buttons button:hover {
-  color: lightseagreen;
   transition: 0.7s;
   transform: scale(1.1);
 }

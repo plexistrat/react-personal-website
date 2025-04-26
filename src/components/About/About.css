@@ -2,17 +2,22 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #2e3b50;
+  background: linear-gradient(to bottom, #4f3838, hsl(210, 27%, 29%));
   padding: 10px;
+
+  @media screen and (max-width: 1500px) {
+    flex-direction: column;
+  }
 }
 .aboutcontent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #2e3b50;
+  background-color: transparent;
   color: #fff;
   padding: 10px;
+  border: 1px solid whitesmoke;
 }
 .aboutcontent h1 {
   font-size: 40px;
@@ -23,46 +28,127 @@
   margin: 10px;
   font-size: 20px;
   color: lightsteelblue;
+
+  @media screen and (max-width: 671px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 465px) {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 350px) {
+    width: 200px;
+    font-size: 12px;
+  }
 }
 .bio {
   width: 600px;
   margin: 20px;
   font-size: 20px;
   color: lightsteelblue;
+
+  @media screen and (max-width: 671px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 465px) {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 350px) {
+    width: 200px;
+    font-size: 12px;
+  }
 }
 .interests {
   width: 600px;
   margin: 10px;
   font-size: 20px;
   color: lightsteelblue;
+
+  @media screen and (max-width: 671px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 465px) {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 350px) {
+    width: 200px;
+    font-size: 12px;
+  }
 }
 .closing {
   width: 600px;
   margin: 20px;
   font-size: 22px;
   color: lightsteelblue;
+
+  @media screen and (max-width: 671px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 465px) {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 350px) {
+    width: 200px;
+    font-size: 12px;
+  }
 }
 .skillscontainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #2e3b50;
+  background-color: transparent;
   color: #fff;
   padding: 10px;
   margin-top: 100px;
+  border: 1px solid whitesmoke;
+
+  @media screen and (max-width: 425px) {
+    margin-top: 50px;
+  }
 }
 .skills {
   font-size: 28px;
   color: lightsteelblue;
+
+  @media screen and (max-width: 425px) {
+    font-size: 20px;
+  }
 }
 .cards {
   width: 800px;
   display: flex;
   flex-wrap: wrap;
-
-  background-color: #2e3b50;
+  background-color: transparent;
   color: #fff;
+
+  @media screen and (max-width: 840px) {
+    width: 600px;
+  }
+  @media screen and (max-width: 670px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 350px) {
+    width: 200px;
+  }
 }
 .card {
   width: 250px;
@@ -72,7 +158,12 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  background-color: #2e3b50;
+  background-color: transparent;
+
+  @media screen and (max-width: 840px) {
+    width: 200px;
+    height: 200px;
+  }
 }
 .card a {
   /* width: 150px; */
