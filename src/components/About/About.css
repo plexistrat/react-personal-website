@@ -17,7 +17,6 @@
   background-color: transparent;
   color: #fff;
   padding: 10px;
-  border: 1px solid whitesmoke;
 }
 .aboutcontent h1 {
   font-size: 40px;
@@ -112,7 +111,6 @@
   color: #fff;
   padding: 10px;
   margin-top: 100px;
-  border: 1px solid whitesmoke;
 
   @media screen and (max-width: 425px) {
     margin-top: 50px;
