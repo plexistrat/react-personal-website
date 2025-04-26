@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom, #f9fafb, #ffffff);
+  background: linear-gradient(to bottom, #2e3b50, #282c34);
   padding: 3rem 1.5rem;
   overflow: hidden;
 }
@@ -15,7 +15,7 @@
 .hero-background {
   position: absolute;
   inset: 0;
-  opacity: 0.05;
+  opacity: 0.5;
 }
 
 .bg-circle-1 {
@@ -85,7 +85,7 @@
 .intro-prefix {
   font-size: 1.125rem;
   font-weight: 500;
-  color: #4b5563;
+  color: #9bb1d1;
 }
 
 .intro-name {
@@ -104,7 +104,7 @@
 .profession-text {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #1f2937;
+  color: #5681be;
 }
 
 .profession-divider {
@@ -137,9 +137,9 @@
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-.download-icon {
+/* .download-icon {
   margin-right: 0.5rem;
-}
+} */
 
 .button-arrow {
   margin-left: 0.5rem;

@@ -5,6 +5,7 @@ import About from "./components/About/About";
 // import Project from "./components/Projects/Project";
 import Contact from "./components/Contact/Contact";
 import NewProjects from "./components/NewProjects/NewProjects";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   const scrollTo = (id) => {
@@ -12,20 +13,25 @@ function App() {
     element.scrollIntoView({ behavior: "smooth" });
   };
 
-  function downloadCv() {
-    const link = document.createElement("a");
-    link.href = "./CV.pdf";
-    link.download = "CV.pdf";
-    link.click();
-  }
+  // function downloadCv() {
+  //   const link = document.createElement("a");
+  //   link.href = "./CV.pdf";
+  //   link.download = "CV.pdf";
+  //   link.click();
+  // }
 
   return (
     <div>
       <Navbar scrollTo={scrollTo} />
       <div className="App">
-        <div className="hero">
+        <Hero />
+
+        {/* <div className="hero">
           <div className="heroPhoto">
             <img src="./mainPhoto.jpg" alt="" />
+          </div>
+          <div className="haarTele">
+            <img src="./haar-tele.jpg" alt="" />
           </div>
 
           <div className="heroText">
@@ -35,7 +41,7 @@ function App() {
             <h3>and Frontend developer</h3>
             <button onClick={downloadCv}>Download CV</button>
           </div>
-        </div>
+        </div> */}
       </div>
       <About scrollTo={scrollTo} />
       {/* <Project scrollTo={scrollTo} /> */}

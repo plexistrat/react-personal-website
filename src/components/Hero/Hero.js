@@ -1,19 +1,20 @@
 import { useState, useEffect } from "react";
-import { Download } from "lucide-react";
+// import { Download } from "lucide-react";
 import "./Hero.css";
 
-export default function Hero({ scrollTo }) {
+export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
-  const downloadCv = () => {
-    // Your existing download functionality
-    console.log("CV download triggered");
-    // Replace with actual download logic
-  };
+  function downloadCv() {
+    const link = document.createElement("a");
+    link.href = "./CV.pdf";
+    link.download = "CV.pdf";
+    link.click();
+  }
 
   return (
     <div className="hero-section">
@@ -22,10 +23,12 @@ export default function Hero({ scrollTo }) {
         <div className="bg-circle-1"></div>
         <div className="bg-circle-2"></div>
       </div>
+
       {/* Photo container */}
       <div className={`hero-photo-container ${isVisible ? "visible" : ""}`}>
         <img src="./mainPhoto.jpg" alt="Sakis Staikos" className="hero-photo" />
       </div>
+
       {/* Text content */}
       <div className={`hero-text-container ${isVisible ? "visible" : ""}`}>
         <div className="intro-text">
@@ -42,7 +45,7 @@ export default function Hero({ scrollTo }) {
         </div>
 
         <button onClick={downloadCv} className="download-button">
-          <Download size={20} className="download-icon" />
+          {/* <Download size={20} className="download-icon" /> */}
           <span>Download CV</span>
           <span className="button-arrow">→</span>
         </button>

@@ -12,6 +12,20 @@
   margin-top: 40px;
   margin-bottom: 140px;
 }
+.haarTele {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.haarTele img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  opacity: 0.5;
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 140px;
+}
 .heroPhoto img {
   width: 450px;
   height: 550px;
