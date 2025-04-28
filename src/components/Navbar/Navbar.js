@@ -30,9 +30,9 @@ const Navbar = ({ scrollTo }) => {
         <button onClick={() => scrollTo("projects")}>Projects</button>
         <button onClick={() => scrollTo("contact")}>Contact</button>
       </div>
-      <button className="burger" onClick={handleClick} style={{}}>
+      {/* <button className="burger" onClick={handleClick} style={{}}>
         <CiMenuBurger />
-      </button>
+      </button> */}
     </div>
   );
 };
