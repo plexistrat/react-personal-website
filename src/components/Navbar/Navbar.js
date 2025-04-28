@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import { CiMenuBurger } from "react-icons/ci";
 
 const Navbar = ({ scrollTo }) => {
   return (
@@ -13,6 +14,7 @@ const Navbar = ({ scrollTo }) => {
         <button onClick={() => scrollTo("projects")}>Projects</button>
         <button onClick={() => scrollTo("contact")}>Contact</button>
       </div>
+      <CiMenuBurger className="burger" />
     </div>
   );
 };

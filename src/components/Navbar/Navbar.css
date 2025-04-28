@@ -45,3 +45,10 @@
   transition: 0.7s;
   transform: scale(1.1);
 }
+.burger {
+  display: none;
+
+  @media screen and (max-width: 425px) {
+    display: block;
+  }
+}
