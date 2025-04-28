@@ -9,15 +9,15 @@ const Navbar = ({ scrollTo }) => {
     setIsBurgerOn(true);
   };
 
-  if (!setIsBurgerOn)
-    return (
-      <div>
-        <a href="/">Home</a>
-        <a href="">About</a>
-        <a href="">Projects</a>
-        <a href="">Contract</a>
-      </div>
-    );
+  // if (!setIsBurgerOn)
+  //   return (
+  //     <div>
+  //       <a href="/">Home</a>
+  //       <a href="/About">About</a>
+  //       <a href="">Projects</a>
+  //       <a href="">Contract</a>
+  //     </div>
+  //   );
 
   return (
     <div className="navbar">
