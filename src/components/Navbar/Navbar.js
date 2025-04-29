@@ -3,21 +3,45 @@ import "./Navbar.css";
 import { CiMenuBurger } from "react-icons/ci";
 
 const Navbar = ({ scrollTo }) => {
-  const [isBurgeOn, setIsBurgerOn] = useState(false);
+  const [isBurgerOn, setIsBurgerOn] = useState(false);
 
-  const handleClick = () => {
-    setIsBurgerOn(true);
-  };
+  function handleBurgerClick() {
+    setIsBurgerOn(!isBurgerOn);
+  }
 
-  // if (!setIsBurgerOn)
-  //   return (
-  //     <div>
-  //       <a href="/">Home</a>
-  //       <a href="/About">About</a>
-  //       <a href="">Projects</a>
-  //       <a href="">Contract</a>
-  //     </div>
-  //   );
+  if (isBurgerOn) {
+    return (
+      <div className="burgerPage">
+        <button className="closeButton" onClick={handleBurgerClick}>
+          X
+        </button>
+        <button
+          onClick={() => {
+            scrollTo("About");
+            handleBurgerClick();
+          }}
+        >
+          About
+        </button>
+        <button
+          onClick={() => {
+            scrollTo("projects");
+            handleBurgerClick();
+          }}
+        >
+          Projects
+        </button>
+        <button
+          onClick={() => {
+            scrollTo("contact");
+            handleBurgerClick();
+          }}
+        >
+          Contact
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div className="navbar">
@@ -30,9 +54,9 @@ const Navbar = ({ scrollTo }) => {
         <button onClick={() => scrollTo("projects")}>Projects</button>
         <button onClick={() => scrollTo("contact")}>Contact</button>
       </div>
-      {/* <button className="burger" onClick={handleClick} style={{}}>
-        <CiMenuBurger />
-      </button> */}
+      <button className="burger">
+        <CiMenuBurger onClick={handleBurgerClick} />
+      </button>
     </div>
   );
 };
