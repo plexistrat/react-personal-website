@@ -30,6 +30,15 @@ const projectsData = [
     link: "#",
     technologies: ["React", "JavaScript", "HTML/CSS"],
   },
+  {
+    id: 4,
+    title: "Weather App",
+    description:
+      "A fully functional weather app built with React.js and OpenWeatherMap API.",
+    image: "./weather-app-image.png",
+    link: "react-personal-website-tau.vercel.app",
+    technologies: ["React", "JavaScript", "HTML/CSS"],
+  },
 ];
 
 export default function NewProjects({ scrollTo }) {

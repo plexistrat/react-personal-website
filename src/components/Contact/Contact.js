@@ -36,12 +36,14 @@ function Contact({ scrollTo }) {
             className="name"
             type="text"
             placeholder="Name"
+            required
             onChange={handleNameChange}
           />
           <input
             className="email"
             type="email"
             placeholder="Email"
+            required
             onChange={handleEmailChange}
           />
         </div>
@@ -50,6 +52,7 @@ function Contact({ scrollTo }) {
           className="subject"
           type="text"
           placeholder="Subject"
+          required
           onChange={handleSubjectChange}
         />
         <textarea
@@ -57,11 +60,16 @@ function Contact({ scrollTo }) {
           placeholder="Message"
           onChange={handleMessageChange}
         ></textarea>
-        <button onClick={handleInputs} className="sendButton">
+        <button
+          onClick={() => {
+            handleInputs();
+            alert("Message sent");
+          }}
+          className="sendButton"
+        >
           Send
         </button>
       </div>
-      {/* {name}, {email}, {subject}, {message} */}
     </div>
   );
 }
