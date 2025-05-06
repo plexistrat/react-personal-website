@@ -36,7 +36,7 @@ const projectsData = [
     description:
       "A fully functional weather app built with React.js and OpenWeatherMap API.",
     image: "./weather-app-image.png",
-    link: "react-personal-website-tau.vercel.app",
+    link: "https://github.com/plexistrat/weather-app-latest.git",
     technologies: ["React", "JavaScript", "HTML/CSS"],
   },
 ];
