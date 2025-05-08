@@ -28,3 +28,12 @@
     font-size: 10px;
   }
 }
+.footer-email:hover {
+  color: lightpink;
+  transition: 0.4s;
+  transform: scale(1.1);
+
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+  }
+}
