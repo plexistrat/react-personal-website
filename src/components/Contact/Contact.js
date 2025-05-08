@@ -48,13 +48,13 @@ function Contact({ scrollTo }) {
           />
         </div>
 
-        <input
+        {/* <input
           className="subject"
           type="text"
           placeholder="Subject"
           required
           onChange={handleSubjectChange}
-        />
+        /> */}
         <textarea
           className="message"
           placeholder="Message"
