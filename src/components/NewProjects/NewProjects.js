@@ -39,6 +39,14 @@ const projectsData = [
     link: "https://github.com/plexistrat/weather-app-latest.git",
     technologies: ["React", "JavaScript", "HTML/CSS"],
   },
+  {
+    id: 5,
+    title: "React Native project",
+    description: "My first React Native project, a simple to-do app.",
+    image: "./to do list-react native.jpg",
+    link: "#",
+    technologies: ["React Native", "JavaScript", "HTML/CSS"],
+  },
 ];
 
 export default function NewProjects({ scrollTo }) {
