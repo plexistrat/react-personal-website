@@ -27,6 +27,11 @@ const cards = [
     title: "Next.js",
     link: "https://nextjs.org/",
   },
+  {
+    image: "./react.svg", // Replace with your actual
+    title: "React Native",
+    link: "https://reactnative.dev/",
+  },
 ];
 
 const About = ({ scrollTo }) => {
